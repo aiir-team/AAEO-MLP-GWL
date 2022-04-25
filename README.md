@@ -1,5 +1,25 @@
 # AAEO-MLP-GWL
 
+## Cite our code
+
+```code
+
+@misc{nguyen_van_thieu_2022_6480834,
+  author       = {Nguyen Van Thieu},
+  title        = {AAEO-MLP-GWL},
+  month        = {april},
+  year         = {2022},
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.6480834},
+  url          = {https://doi.org/10.5281/zenodo.6480834}
+}
+
+```
+
+
+
+
 ## Data Statement:
 
 1. The gridded rainfall and temperature data are available freely at 
