@@ -63,7 +63,6 @@ Compared Algorithms
 16. Modified AEO
 17. Enhanced AEO
 18. Adaptive AEO (Our proposed model)
-
 ```
 
 ## How to run models
@@ -83,34 +82,79 @@ Compared Algorithms
 
 ```
 
+## Environment
+
+1. If using conda 
+```code
++ Should create a new environment:
+   conda create -n new ml python==3.7.5
+   conda activate ml
+   
+   conda install -c conda-forge numpy
+   conda install -c conda-forge pandas
+   conda install -c conda-forge scikit-learn
+   conda install -c conda-forge matplotlib
+   conda install -c conda-forge tensorflow==2.1.0
+   conda install -c conda-forge keras==2.3.1
+   
+   pip uninstall mealpy
+   pip uninstall permetrics
+   pip install mealpy==2.4.0
+   pip install permetrics==1.2.2
+```
+
+2. If using pip 
+
+```code 
++ Should create a new environment:
+   python -m venv ml
+   ml\Scripts\activate.bat
+   pip install -r requirements.txt
+```
 
 
 ## Export environment
 
 ```code 
+
+pip list (pip auto-downloaded in python)
+
+pip list --local (only packages installed from current environment)
+
+
+1. Create a blank environment 
+
+python -m venv env_name (create a blank environment named "env_name")
+
+env_name\Scripts\activate.bat (activate env)
+
+pip freeze > requirements.txt 
+
+
+2. Create an inheritance environment 
+
+python -m venv india --system-site-packages (create india environment inherits packages from based-system)
+
+india\Scripts\activate.bat  (activate india env)
+
+pip install numpy (install package to current env)
+
+pip freeze --local > requirements.txt (Create requirements file that installed additional packages)
+
+rmdir india /s 	(remove all environment)
+
+
+3. Remove pip from python 
+
+python -m pip uninstall pip
+
+4. Export environments 
+
 pip list --format=freeze > requirements.txt 
 
+pip freeze --local > requirements.txt
+
 ```
-
-## Environment
-
-```code 
-conda create -n new ml python==3.7.5
-conda activate ml
-conda install -c conda-forge numpy
-conda install -c conda-forge pandas
-conda install -c conda-forge scikit-learn
-conda install -c conda-forge matplotlib
-conda install -c conda-forge tensorflow==2.1.0
-conda install -c conda-forge keras==2.3.1
-
-pip uninstall mealpy
-pip uninstall permetrics
-pip install mealpy==2.4.0
-pip install permetrics==1.2.2
-```
-
-
 
 ## Helper
 
